@@ -1,0 +1,30 @@
+@import './styles/vars'
+
+*, *:before, *:after
+  box-sizing: border-box
+
+body
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+code
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 1.875em
+
+.app-wrapper
+  display: grid 
+  grid-auto-columns: 1fr 
+  grid-template-columns: (250em/16) 1.5fr 
+  grid-template-rows: 80px 1fr 100px 
+  gap: 10px 10px 
+  grid-template-areas:  "header header" "nav content" "footer footer"
+
+.content 
+  grid-area: content
+  border-left: 1px solid $border

@@ -1,0 +1,50 @@
+@import '../../../styles/vars'
+    
+.post
+    border-top: 1px solid $border
+    border-bottom: 1px solid $border
+    display: flex
+    align-items: flex-start
+    padding: 1em 0
+
+    &__author_icon
+        width: 3em
+        display: inline-block
+        margin-right: 1em
+    
+    &__head
+        display: flex
+        margin-bottom: .5em  
+        font-size: 1em
+
+        &>div
+            &:not(:last-child)
+                margin-right: 1em
+    
+    &__author_name
+        font-weight: 700
+
+    &__author_nickname
+        color: $gray-200
+
+    &__date
+        color: $gray-200
+
+    &__body
+        margin-bottom: 1em 
+
+    &__lead
+        p
+            margin-top: 0
+
+    &__img
+        border-radius: 1em
+        width: 100%
+
+    &__footer
+        ul
+            display: flex
+            list-style-type: none
+            padding: 0 1em
+            justify-content: space-between
+            margin-bottom: 0
