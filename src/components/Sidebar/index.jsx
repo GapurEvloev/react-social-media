@@ -8,7 +8,7 @@ const Sidebar = () => {
         <nav className={styles.nav}>
             <ul>
                 <li className={styles.nav_item}>
-                    <NavLink exact className={({ isActive }) => styles.nav_link + (isActive ? ' '+styles.nav_active : "")} to="/">
+                    <NavLink exact="true" className={({ isActive }) => styles.nav_link + (isActive ? ' '+styles.nav_active : "")} to="/">
                         <span className={styles.nav_icon}>
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" clipRule="evenodd" d="M11.8766 0.1035L22.5828 6.37675C22.9686 6.60445 23.1127 7.1277 22.905 7.54515C22.6962 7.96375 22.213 8.1167 21.8273 7.89475L20.9604 7.38645L19.2373 20.6C19.0063 22.0248 17.848 23 16.4153 23H6.57905C5.14844 23 3.98911 22.0259 3.76233 20.6287L2.03606 7.38875L1.1724 7.89475C1.05265 7.96375 0.922305 7.99825 0.79514 7.99825C0.513256 7.99825 0.23879 7.8338 0.0957293 7.5463C-0.113034 7.12655 0.0310868 6.6033 0.416822 6.37675L11.121 0.1035C11.3573 -0.0345 11.6402 -0.0345 11.8766 0.1035ZM16.4174 21.275C16.9229 21.275 17.5545 21.0266 17.6679 20.3297L19.4694 6.51245L11.4982 1.84345L3.5292 6.51475L5.33283 20.3573C5.44198 21.0266 6.07251 21.275 6.58117 21.275H16.4174Z" fill="#14171A"/>

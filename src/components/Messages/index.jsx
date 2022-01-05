@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Messages.module.sass'
+// import styles from './Messages.module.sass'
 
 const Dialogs = () => {
     return (
